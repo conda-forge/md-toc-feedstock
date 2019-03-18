@@ -12,8 +12,8 @@ build:
   number: 0
   noarch: python
   entry_points:
-    - md_toc=md_toc.__main__:main
-  script: python -m pip install --no-deps --ignore-installed .
+    - md_toc = md_toc.__main__:main
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
