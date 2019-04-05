@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: md-toc
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/md_toc/md_toc-{{ version }}.tar.gz
-  sha256: 91421e91d2f2184a20e55085e79fdb20e0d4bfe0d60470c6cabd997b959d0d55
+  sha256: c489f115a8eeebe25c374ca223850c574d6b00eb713804dff876d95cc50d5a5f
 
 build:
   number: 0
