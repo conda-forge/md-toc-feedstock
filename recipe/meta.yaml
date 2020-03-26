@@ -1,4 +1,4 @@
-{% set version = "6.0.2" %}
+{% set version = "7.0.1" %}
 
 package:
   name: md-toc
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/md_toc/md_toc-{{ version }}.tar.gz
-  sha256: d8145bf367d5734a8acb4de8c64251bd02a5d7aa1a3171f38fe55d140cb482a4
+  sha256: f259b383c20f41ced70ebc3d7bbaef4971c5a049882aa8684728edabaa033ef2
 
 build:
   number: 0
   noarch: python
   entry_points:
     - md_toc = md_toc.__main__:main
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   license: GPL-3.0
   license_family: GPL3
   license_file: LICENSE.txt
-  summary: 'An utility that is able to generate a table of contents for a markdown file'
+  summary: An utility that is able to generate a table of contents for a markdown file
 
 extra:
   recipe-maintainers:
