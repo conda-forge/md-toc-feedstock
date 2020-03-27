@@ -3,7 +3,7 @@ About md-toc
 
 Home: https://github.com/frnmst/md-toc
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
