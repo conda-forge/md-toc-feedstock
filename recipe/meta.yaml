@@ -11,29 +11,31 @@ source:
 build:
   number: 0
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - md_toc = md_toc.__main__:main
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3
+    - python >=3.5,<4
     - pip
-    - fpyutils >=0.0.2
   run:
-    - python >=3
+    - python >=3.5,<4
     - setuptools
-    - fpyutils >=0.0.2
+    - fpyutils >=1.1.0
 
 test:
   imports:
     - md_toc
   commands:
+    - pip check
     - md_toc --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/frnmst/md-toc
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL3
   license_file: LICENSE.txt
   summary: An utility that is able to generate a table of contents for a markdown file
