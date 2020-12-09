@@ -5,11 +5,9 @@ Home: https://github.com/frnmst/md-toc
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/md-toc-feedstock/blob/master/LICENSE.txt)
 
 Summary: An utility that is able to generate a table of contents for a markdown file
-
-
 
 Current build status
 ====================
