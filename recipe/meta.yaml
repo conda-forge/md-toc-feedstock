@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.5,<4
     - setuptools
-    - fpyutils ==1.2.0
+    - fpyutils >=2.0,<2.1
 
 test:
   imports:
