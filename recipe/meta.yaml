@@ -1,4 +1,4 @@
-{% set version = "7.2.0" %}
+{% set version = "8.0.0" %}
 
 package:
   name: md-toc
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/md_toc/md_toc-{{ version }}.tar.gz
-  sha256: 34a9600801af57623eacc537e213b1a526ba07c3b49e6cd61563aa130956367e
+  sha256: 2a1fcfabd6411052013a85caa2e6d9dab544df3ccc2e6d1f9934a24fe784274a
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.5,<4
     - setuptools
-    - fpyutils ==1.2.0
+    - fpyutils >=2.0,<2.1
 
 test:
   imports:
