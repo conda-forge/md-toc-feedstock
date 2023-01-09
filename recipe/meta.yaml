@@ -21,8 +21,9 @@ requirements:
     - pip
   run:
     - python >=3.6,<4.0
+    - fpyutils >=3.0.1,<4
+    - importlib-metadata >=1.0
     - setuptools
-    - fpyutils >=3.0,<4
 
 test:
   imports:
