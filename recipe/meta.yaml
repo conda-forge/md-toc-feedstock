@@ -1,5 +1,5 @@
 {% set name = "md-toc" %}
-{% set version = "8.2.0" %}
+{% set version = "8.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/md_toc-{{ version }}.tar.gz
-  sha256: a0f5d087e8e0229855f4e4d75003dd90c454e9d4959b54a887f52b2f27f1ed8f
+  sha256: 493b6c26cbedc20eb2d6cad1424154584af7bb5df965b3657ba395e3d1de3a65
 
 build:
   number: 0
@@ -18,13 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<4.0
+    - python >=3.8,<4.0
     - pip
   run:
-    - python >=3.6,<4.0
-    - fpyutils >=3.0.1,<4
-    - importlib-metadata >=1.0
-    - setuptools
+    - python >=3.8,<4.0
+    - fpyutils >=4.0.0,<5
 
 test:
   imports:
