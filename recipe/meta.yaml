@@ -1,16 +1,16 @@
 {% set name = "md-toc" %}
-{% set version = "9.0.0" %}
+{% set version = "9.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/md_toc-{{ version }}.tar.gz
-  sha256: a4e73b59f71c20b94c8c16bc6ef3bc2e80d1d40c398050101f80c3567fda7271
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/md_toc-{{ version }}.tar.gz
+  sha256: d66b66228d4dcd58601b06e3a88a404623e9a0e90c1bece1e707cdf0e95aa28b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - fpyutils >=4.0.1,<5
+    - fpyutils >=4.0.1
 
 test:
   imports:
