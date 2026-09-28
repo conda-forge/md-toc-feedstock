@@ -7,7 +7,9 @@ Home: https://github.com/frnmst/md-toc
 
 Package license: GPL-3.0-or-later
 
-Summary: An utility that is able to generate a table of contents for a markdown file
+Summary: Automatically generate and add an accurate table of contents to markdown files
+
+Documentation: https://docs.franco.net.eu.org/md-toc/
 
 Current build status
 ====================
