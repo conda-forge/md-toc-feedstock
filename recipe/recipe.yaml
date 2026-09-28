@@ -1,0 +1,54 @@
+schema_version: 1
+
+context:
+  version: "9.0.1"
+
+package:
+  name: md-toc
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/m/md-toc/md_toc-${{ version }}.tar.gz
+  sha256: d66b66228d4dcd58601b06e3a88a404623e9a0e90c1bece1e707cdf0e95aa28b
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  python:
+    entry_points:
+      - md_toc = md_toc.__main__:main
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatchling >=1.30
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - fpyutils >=4.0.1
+
+tests:
+  - python:
+      imports:
+        - md_toc
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - md_toc --help
+
+about:
+  summary: Automatically generate and add an accurate table of contents to markdown files
+  license: GPL-3.0-or-later
+  license_file: PLEASE_ADD_LICENSE_FILE
+  homepage: https://github.com/frnmst/md-toc
+  documentation: https://docs.franco.net.eu.org/md-toc/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
