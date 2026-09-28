@@ -45,7 +45,7 @@ tests:
 about:
   summary: Automatically generate and add an accurate table of contents to markdown files
   license: GPL-3.0-or-later
-  license_file: PLEASE_ADD_LICENSE_FILE
+  license_file: LICENSES/GPL-3.0-or-later.txt
   homepage: https://github.com/frnmst/md-toc
   documentation: https://docs.franco.net.eu.org/md-toc/
 
