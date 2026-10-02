@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "9.0.1"
+  version: "9.1.0"
 
 package:
   name: md-toc
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/m/md-toc/md_toc-${{ version }}.tar.gz
-  sha256: d66b66228d4dcd58601b06e3a88a404623e9a0e90c1bece1e707cdf0e95aa28b
+  sha256: 7914cdf1bd2d452e1b9ef95804b3a212d2463eb277c06e05ff49a11b3fd6e4d4
 
 build:
   number: 0
